@@ -2,13 +2,16 @@
   "name": "atom-habit",
   "main": "./lib/atom-habit",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Atom plugin to avoid breaking your typing habits",
   "keywords": [
+    "atom",
+    "habit",
+    "typing"
   ],
   "activationCommands": {
     "atom-workspace": "atom-habit:toggle"
   },
-  "repository": "https://github.com/atom/atom-habit",
+  "repository": "https://github.com/myaskevich/atom-habit",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
