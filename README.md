@@ -1,5 +1,25 @@
 # atom-habit package
 
-A short description of your package.
+Atom plugin to help you avoid diverting from your typing habits and be a happier person.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![A screenshot of your package](https://media.giphy.com/media/l3vRgmOkqsB2SnNeM/giphy.gif)
+
+## Configuration
+
+Add custom rules to your `config.cson` like this:
+
+```
+"*":
+  "atom-habit":
+    rules: [
+      "const\\s/let "
+    ]
+```
+
+### Rule syntax
+
+Rule is a plain sed-like string. You define trigger regex on the left to `/` and substitute regex on the right.
+
+    "${TRIGGER_REGEX}/${SUBSTITUTE_REGEX}"
+
+**Note:** Currently you have to manually escape all what needs to be escaped.
